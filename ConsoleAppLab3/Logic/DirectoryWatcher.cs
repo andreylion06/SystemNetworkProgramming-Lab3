@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Ім'я файлу: DirectoryWatcher.cs
+// Ремарка: DirectoryWatcher відслідковує зміни в обраному каталозі та записує ці зміни в лог-файл.
+// Автор: Андрій Сахно
+
 namespace ConsoleAppLab3.Logic
 {
     public class DirectoryWatcher
     {
+        // Для обраних каталогу на диску, Включити спостереження за змінами,
+        // продемонструвати відслідковування більше однієї зміни.Зміни
+        // записувати в лог файл.
         private FileSystemWatcher watcher;
 
         public DirectoryWatcher(string path)
@@ -47,3 +54,5 @@ namespace ConsoleAppLab3.Logic
         }
     }
 }
+
+// Кінець файлу

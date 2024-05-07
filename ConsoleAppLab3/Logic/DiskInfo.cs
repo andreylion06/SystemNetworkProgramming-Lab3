@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Ім'я файлу: DiskInfo.cs
+// Ремарка: DiskInfo надає інформацію про диски в системі.
+// Автор: Андрій Сахно
+
 namespace ConsoleAppLab3.Logic
 {
     public class DiskInfo
     {
+        // Список усіх логічних дисків в системі.
         public void DisplayLogicalDrives()
         {
             string[] drives = Directory.GetLogicalDrives();
@@ -18,6 +23,7 @@ namespace ConsoleAppLab3.Logic
             }
         }
 
+        // Отримати тип кожного диску присутнього в системі, та дати пояснення для кожного типу диску.
         public void DisplayDiskTypes()
         {
             string[] drives = Directory.GetLogicalDrives();
@@ -53,6 +59,7 @@ namespace ConsoleAppLab3.Logic
             }
         }
 
+        // Отримати інформацію про диски в системі та про файлові системи які Використовують на них.
         public void DisplayFileSystemInfo()
         {
             string[] drives = Directory.GetLogicalDrives();
@@ -67,6 +74,7 @@ namespace ConsoleAppLab3.Logic
             }
         }
 
+        // Отримати інформацію про зайнятості та вільне місце на кожному з дисків.
         public void DisplayDiskSpace()
         {
             string[] drives = Directory.GetLogicalDrives();
@@ -83,3 +91,5 @@ namespace ConsoleAppLab3.Logic
         }
     }
 }
+
+// Кінець файлу

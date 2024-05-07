@@ -1,5 +1,11 @@
 ﻿using ConsoleAppLab3.Logic;
 
+// Ім'я файлу: Program.cs
+// Ремарка: Program.cs використовує класи Menu, DiskInfo, SystemInfo,
+//          DirectoryWatcher та демонструє правильність їх роботи 
+// Автор: Андрій Сахно
+
+
 var diskInfo = new DiskInfo();
 var systemInfo = new SystemInfo();
 
@@ -35,3 +41,5 @@ while (true)
     menu.HandleInput(option);
     menu.WaitNextIteration();
 }
+
+// Кінець файлу
