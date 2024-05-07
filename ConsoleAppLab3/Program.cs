@@ -29,7 +29,7 @@ var items = new Dictionary<string, Action>
 
             watcher.StopWatching();
         } },
-        { "Exit 3", () => { Console.WriteLine("Exiting the program"); Environment.Exit(0); } }
+        { "Exit", () => { Console.WriteLine("Exiting the program"); Environment.Exit(0); } }
     };
 
 var menu = new Menu(items);
